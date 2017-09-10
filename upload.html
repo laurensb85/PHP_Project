@@ -1,0 +1,375 @@
+<html>
+<head>
+<title>Pictures with feeling - Upload</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="Standaard.css" rel="stylesheet" type="text/css"/>
+
+<script type="application/javascript">
+function validateForm() {
+	//email format
+	var re = /^([A-Za-z0-9\'_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	//var emailValid;
+
+	// Checking if at least one period button is selected. Or not.
+	if(!document.frmThesis.agree.checked){
+		alert("Please check the terms and conditions");
+		document.frmThesis.agree.focus();
+		return false; 
+	}
+	
+	if (document.frmThesis.email.value == "") {
+		alert( "Please enter your email address." );
+		document.frmThesis.email.focus();
+		return false;
+	}
+	if(document.frmThesis.email.value.match(re)){
+			//alert("Successful match");
+			return true;
+		} else {
+			alert("Please enter an valid email adres, for ex. john.doe@test.be");
+			document.frmThesis.email.focus();
+			return false;
+		}
+	return true;
+}
+
+</script>
+
+</head>
+<body bgcolor="#ededed" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (website_standaardpagepsd_Sliced.psd) -->
+<table id="Table_01" width="899" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td colspan="5">
+			<img src="images/research_01.gif" width="898" height="65" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="65" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2">
+			<img src="images/research_02.gif" width="160" height="40" alt=""></td>
+		<td bgcolor="#128aa3">
+			<table id="table_menu" width="596"  border="0" cellpadding="0
+            " cellspacing="0">
+            
+            <tr align="center" bgcolor="#128aa3">
+            <td width="119"><a href="index.html">Home</a></td>
+            <td width="119"><a href="research.html">Research</a></td>
+            <td width="119" bgcolor="#28a4be"><a href="upload.html">Upload</a></td>
+            <td  width="119"><a href="terms.html" >Terms&Conditions </a></td>
+            <td width ="119"><a href="contact.html" >Contact </a>
+            </td>
+            </tr>
+            </table> </td>
+		<td colspan="2" rowspan="2">
+			<img src="images/research_04.gif" width="142" height="40" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="21" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/research_05.gif" width="596" height="19" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="19" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="images/upload_06.gif" width="898" height="128" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="128" alt=""></td>
+	</tr>
+	<tr>
+		<td valign="top">
+			<img src="images/upload_07.gif" width="98" height="136" alt="">
+        </td>
+		<td colspan="3" rowspan="2" align="left" valign="top" bgcolor="#FFFFFF">
+        <table id="tabletext" width="698" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        	<td width="30">
+            </td>
+            <td>
+<p class="NelleStyle3"><br />Upload</p>
+
+<p class="NelleStyle2">Here you can upload your pictures. </p>
+
+<p class="NelleStyle2">To know the emotional feeling associated with each picture, you are asked to score each picture on valence and arousal. For more information on valence and arousal, go to <a href="research.html" class="link2">Research</a>.</p>
+
+<p class="NelleStyle2">Please rate each picture with respect to<br />
+Valence, rangin from :<br />
+ 1 = very negative<br />
+ 5 = neutral<br />
+ 9 = very positive </p>
+
+<p class="NelleStyle2">Arousal:<br />
+ 1 = very low arousal <br />
+ 5 = neutral<br />
+ 9 = very high arousal</p>
+
+<p class="NelleStyle2">Don&rsquo;t forget to fill in your name and email address. Make sure you first read the <a href="terms.html" class="link2">terms and conditions</a>, before you start uploading.<br />
+</p>
+
+
+<p id="form_thesis_nelle">
+    <form id="frmThesis" name="frmThesis" enctype="multipart/form-data" action="script/data.php" method="POST" onsubmit='return validateForm()'>
+        
+            <p> 
+                <label>Name:</label>
+                <input name="name" id="name" required placeholder="Jon Doe" type="text" />
+            </p>
+            
+            <p> 
+                <label>Email:</label>
+                <input type="text" id="email" name="email" required placeholder="John.Doe@Test.be" />
+            </p>
+        
+            <p>
+                <label>Picture 1:</label>
+                <input name="photo_1" required placeholder="testfoto.jpg" type="file" /><br/>
+                <label>Valence: </label>
+                <select name="cbo_photo1_v">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very negative)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very positive)</option>
+                </select>
+                <label>Arousal: </label>
+                <select id="cbo_photo1_a" name="cbo_photo1_a">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very low arousal)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very high arousal)</option>
+                </select>
+            </p>
+            
+            <p>
+                <label>Picture 2:</label>
+                <input name="photo_2" type="file" /><br/>
+                <label>Valence: </label>
+                <select name="cbo_photo2_v">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very negative)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very positive)</option>
+                </select>
+                <label>Arousal: </label>
+                <select name="cbo_photo2_a">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very low arousal)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very high arousal)</option>
+                </select>
+            </p>
+            
+            <p>
+                <label>Picture 3:</label>
+                <input name="photo_3" type="file" /><br/>
+                <label>Valence: </label>
+                <select name="cbo_photo3_v">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very negative)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very positive)</option>
+                </select>
+                <label>Arousal: </label>
+                <select name="cbo_photo3_a">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very low arousal)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very high arousal)</option>
+                </select>
+            </p>
+            
+            <p>
+                <label>Picture 4:</label>
+                <input name="photo_4" type="file" /><br/>
+                <label>Valence: </label>
+                <select name="cbo_photo4_v">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very negative)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very positive)</option>
+                </select>
+                <label>Arousal: </label>
+                <select name="cbo_photo4_a">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very low arousal)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very high arousal)</option>
+                </select>
+            </p>
+            
+            <p>
+                <label>Picture 5:</label>
+                <input name="photo_5" type="file" /><br/>
+                <label>Valence: </label>
+                <select name="cbo_photo5_v">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very negative)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very positive)</option>
+                </select>
+                <label>Arousal: </label>
+                <select name="cbo_photo5_a">
+                    <option value="" selected="selected">&nbsp;</option>
+                    <option value="1">1 (Very low arousal)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Neutral)</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9 (Very high arousal)</option>
+                </select>
+            </p>
+            
+            <p> 
+                <input type="checkbox" value="0" name="agree" /><a id="frmThesis_agree" href="terms.html" target="_blank">I accept the license agreements.</a>
+            </p>  
+            
+            <p> 
+                <input value="Upload" type="submit" title="Upload" alt="Upload" />
+                <input value="Reset" type="reset" title="Reset" alt="Reset" />
+            </p>             
+ </form>
+</p>
+
+<p class="NelleStyle2">*Reminder: Photos may depict people, animals, (nature) scenes, objects, etcetera which preferably express some kind of emotion. Cultural variability in the pictures is desirable. <br /> <br /></p>
+            </td>
+            <td width="30">
+            </td>
+        </tr>
+        </table>
+        
+        
+        
+        
+        
+      </td>
+		<td valign="top">
+			<img src="images/upload_09.gif" width="102" height="136" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="136" alt=""></td>
+	</tr>
+	<tr>
+		<td bgcolor="#FFFFFF"></td>
+		<td bgcolor="#FFFFFF">
+			</td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="398" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<img src="images/research_12.gif" width="698" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<table id="table_bottommenu" width="898" border = "0" cellpadding="10" cellspacing="0" bgcolor = "#ededed">
+            	<tr>
+            		<td width="158">
+						
+                      
+                        		 <p><a href="index.html" class="link2">Home</a>  <br /> <br /> 
+                        	
+                        		<a href="research.html" class="link2">Research</a> <br /> <br /> 
+                        	
+                        		 <a href="upload.html" class="link2">Upload</a> <br /> <br /> 
+                                 
+                                 <a href="terms.html" class="link2">Terms & Conditions</a></p>
+                            </td>
+                      
+                        
+                    
+                    <td align="center" >
+                    momenteel nutteloos middendeel
+                    </td>
+                    <td align="right" valign="top">
+                    <p class="NelleStyle2">contact: <br>
+                    nelle.minner@student.kuleuven.be
+                    </p>
+                    </td>
+                    
+                </tr>
+            </table> </td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="110" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="images/research_14.gif" width="898" height="48" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="48" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="98" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="62" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="596" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="40" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="102" height="1" alt=""></td>
+		<td></td>
+	</tr>
+</table>
+<!-- End Save for Web Slices -->
+</body>
+</html>

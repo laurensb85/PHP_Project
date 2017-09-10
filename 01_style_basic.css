@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document: Pictures with feeling */
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #ededed;
+	font-size: 16px;
+	font-weight:100;
+	font-family: sans-serif;
+	background: #ededed url('images/backgroundimage_home.gif') fixed center;
+	background-repeat: repeat-y;
+	
+}
+
+html {
+	height: 101%;
+}
+
+a:link {
+	color: #5b5b5b;
+}
+a:visited {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #85d7dd;
+}
+a:active {
+	color: #202020;
+}
+.NelleStyle1 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+}
+.NelleStyle2 {
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight:100;
+}
+a:link.link2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 12px;
+	color:#5b5b5b;
+	font-weight:bold;
+	
+}
+a:visited.link2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 12px;
+	color:#5b5b5b;
+	font-weight:bold;
+}
+a:hover.link2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 12px;
+	
+	font-weight:bold;
+	color: #85d7dd;
+}
+a:active.link2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 12px;
+	
+	font-weight:bold;
+	color: #202020;
+}

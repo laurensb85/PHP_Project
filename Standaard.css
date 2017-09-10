@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document: Pictures with feeling */
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #ededed;
+	font-size: 16px;
+	font-weight:100;
+	font-family: Arial,"Courier New", Courier, monospace;
+	background:#ededed url('images/backgroundimage.gif') fixed center;
+	background-repeat: repeat-y;
+	
+}
+
+html {
+	height: 101%;
+}
+
+form a#frmThesis_agree{
+	font-family: 	Arial,"Courier New", Courier, monospace;
+	text-decoration:none;
+	font-size: 14px;
+	color:#000;
+}
+
+a:link, a#frmThesis_agree:link {
+	font-family: 	Arial,"Courier New", Courier, monospace;
+	text-decoration:none;
+	font-size: 14px;
+	color:#000;
+}
+a:visited, a#frmThesis_agree:visited {
+	font-family: Arial,"Courier New", Courier, monospace;
+	text-decoration:none;
+	font-size: 14px;
+	color:#000;
+}
+a:hover, a#frmThesis_agree:hover {
+	font-family: Arial,"Courier New", Courier, monospace;
+	text-decoration:none;
+	font-size: 14px;
+	color: #85d7dd;
+}
+a:active, a#frmThesis_agree:active {
+	font-family: Arial,"Courier New", Courier, monospace;
+	text-decoration:none;
+	font-size: 14px;
+	
+	color: #202020;
+}
+.NelleStyle1 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 16px;
+	color:#FFFFFF;
+	font-weight:bold;
+	
+}
+.NelleStyle2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	color: #5b5b5b;
+	font-size: 12px;
+	font-weight:100;
+}
+.NelleStyle3 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	color: #128aa3;
+	font-size: 24px;
+	font-weight:bold;
+}
+
+.NelleStyle4 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	color: #128aa3;
+	font-style:italic;
+	font-size: 18px;
+	font-weight:bold;
+}
+
+a:link.link2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 12px;
+	color:#5b5b5b;
+	font-weight:bold;
+	
+}
+a:visited.link2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 12px;
+	color:#5b5b5b;
+	font-weight:bold;
+}
+a:hover.link2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 12px;
+	
+	font-weight:bold;
+	color: #85d7dd;
+}
+a:active.link2 {
+	font-family: Arial,"Courier New", Courier, monospace;
+	font-size: 12px;
+	
+	font-weight:bold;
+	color: #202020;
+}
+
+form, p#form_thesis_nelle{
+	color:#000;
+}
